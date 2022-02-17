@@ -1,0 +1,4 @@
+# chatApp_RESTAPI
+On the Client Side, the User can create a Room and Join the Room. App.js and index.js files route the path towards Join.js and client.js components as they are the main component. Join.css and Client.css contain all the CSS file for creating the form. Here A single map is created Messages(<usermessage>,<userid>) to handle all the messages being sent by the User
+On the Server side. Index.js has all the REST web services, and Socket.io is used to emit the message to and from the User. Here, user.js contains all the CRUD operations, such as adding a user, removing a user, getting a User, and getting user room.
+Here the node.js server is on port 5000 and react.js is on port 3000 so you will face a Cross-origin Resource Sharing (CORS) issue which can be handled either by intalling cors in the server or putting a proxy in the browser which is a temporary solution.
